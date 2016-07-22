@@ -7,8 +7,8 @@ home.$inject = []
 function home($) {
   var vm = this;
   vm.todos = [
-    { name: 'Cook dinner.'},
-    { name: 'Return Dave\'s call'}
+    { name: 'Cook dinner.', checked: true },
+    { name: 'Return Dave\'s call.', checked: false }
   ]
   vm.message = 'Things to do:';
 };
