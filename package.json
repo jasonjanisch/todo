@@ -1,0 +1,23 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "A todo app for folks who want to be organized.",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonjanisch/todo.git"
+  },
+  "author": "Jason Janisch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonjanisch/todo/issues"
+  },
+  "homepage": "https://github.com/jasonjanisch/todo#readme"
+}
