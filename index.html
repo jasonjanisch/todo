@@ -12,6 +12,9 @@
         <div class="col-md-8">
           <div ng-controller="homeController as home">
             <h1>{{home.message}}</h1>
+            <div ng-repeat="todo in home.todos">
+              {{todo.name}}
+            </div>
           </div>
         </div>
       </div>
