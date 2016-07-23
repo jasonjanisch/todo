@@ -11,7 +11,14 @@
       <div class="row">
         <div class="col-md-8">
           <div ng-controller="homeController as home">
-            <h1>{{home.message}}</h1>
+            <h1>
+              <span ng-show="home.todos.length != 0">
+                {{home.message}} {{home.todos.length}}
+              </span>
+            </h1>
+            <h1 ng-show="home.todos.lenth == 0">
+              You have nothing to do!
+            </h1>
             <h3 ng-repeat="todo in home.todos">
               <span ng-class="todo.checked ? 'text-muted': 'h3'">
                 <span ng-click="todo.checked = !todo.checked">

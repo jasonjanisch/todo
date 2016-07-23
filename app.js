@@ -4,11 +4,11 @@ app.controller('homeController', home);
 
 home.$inject = []
 
-function home($) {
+function home() {
   var vm = this;
   vm.todos = [
     { name: 'Cook dinner.', checked: true },
     { name: 'Return Dave\'s call.', checked: false }
   ]
-  vm.message = 'Things to do:';
+  vm.message = 'Things to do: ';
 };
