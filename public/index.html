@@ -11,16 +11,27 @@
       <div class="row">
         <div class="col-md-8">
           <div ng-controller="homeController as home">
-            <h1>{{home.message}}</h1>
-            <div ng-repeat="todo in home.todos">
-              {{todo.name}}
-            </div>
+            <h1>
+              <span ng-show="home.todos.length != 0">
+                {{home.message}} {{home.todos.length}}
+              </span>
+            </h1>
+            <h1 ng-show="home.todos.lenth == 0">
+              You have nothing to do!
+            </h1>
+            <h3 ng-repeat="todo in home.todos">
+              <span ng-class="todo.checked ? 'text-muted': 'h3'">
+                <span ng-click="todo.checked = !todo.checked">
+                  {{todo.name}}
+                </span>
+              </span>
+            </h3>
           </div>
         </div>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="default.js"></script>
   </body>
 </html>

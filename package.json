@@ -4,7 +4,12 @@
   "description": "A todo app for folks who want to be organized.",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.14.0"
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^2.2.0",
+    "mongodb": "^2.2.4",
+    "request": "^2.74.0"
   },
   "devDependencies": {},
   "scripts": {
